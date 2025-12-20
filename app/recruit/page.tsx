@@ -19,7 +19,7 @@ const positions = [
   },
   {
     title: 'M.S. Students',
-    description: 'Master's students interested in wearable sensors, flexible electronics, or AI-integrated devices are welcome to apply.',
+    description: "Master's students interested in wearable sensors, flexible electronics, or AI-integrated devices are welcome to apply.",
     requirements: [
       'Background in Materials Science, Physics, or Engineering',
       'Interest in experimental research',

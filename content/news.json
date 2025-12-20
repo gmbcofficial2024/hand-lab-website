@@ -1,0 +1,26 @@
+[
+  {
+    "id": "news-2025-001",
+    "title": "KAIST, 문어다리처럼 감싸 췌장암 치료하는 LED 장치 개발",
+    "date": "2025-12-15",
+    "category": "research",
+    "content": "KAIST 신소재공학과 이건재 교수 연구팀이 췌장암 치료를 위한 3D 마이크로 LED 장치를 개발했습니다. 이 장치는 문어다리처럼 유연하게 종양을 감싸 효과적인 광역학 치료를 가능하게 합니다.",
+    "thumbnail": "/images/news/placeholder.jpg"
+  },
+  {
+    "id": "news-2025-002",
+    "title": "이건재 교수, Nature Reviews Cardiology 리뷰 논문 게재",
+    "date": "2025-09-01",
+    "category": "publication",
+    "content": "HAND Lab의 웨어러블 혈압 센서 연구가 Impact Factor 41.7의 Nature Reviews Cardiology에 리뷰 논문으로 게재되었습니다.",
+    "thumbnail": "/images/news/placeholder.jpg"
+  },
+  {
+    "id": "news-2024-001",
+    "title": "피부 노화 방지 LED 마스크 임상 검증 성공",
+    "date": "2024-11-20",
+    "category": "research",
+    "content": "HAND Lab에서 개발한 Face-fit Surface-lighting micro LED Mask의 피부 안티에이징 효과가 임상시험을 통해 검증되었습니다. 관련 연구가 Advanced Materials에 게재되었습니다.",
+    "thumbnail": "/images/news/placeholder.jpg"
+  }
+]

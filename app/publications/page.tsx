@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { BookOpen, Download, ExternalLink } from 'lucide-react'
+import { BookOpen, ExternalLink } from 'lucide-react'
 import publications from '@/content/publications.json'
 
 export const metadata: Metadata = {
@@ -142,15 +142,6 @@ export default function PublicationsPage() {
                               >
                                 <ExternalLink className="w-3 h-3 mr-1" />
                                 DOI
-                              </a>
-                            )}
-                            {pub.pdf && (
-                              <a
-                                href={pub.pdf}
-                                className="inline-flex items-center text-xs text-gray-500 hover:text-primary-600"
-                              >
-                                <Download className="w-3 h-3 mr-1" />
-                                PDF
                               </a>
                             )}
                           </div>
