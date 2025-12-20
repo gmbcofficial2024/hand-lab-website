@@ -312,7 +312,51 @@ hand.kaist.ac.kr → 76.76.21.21
 
 ---
 
-## 10. 확장 가능성
+## 10. Admin Console (관리자 콘솔)
+
+### 10.1 개요
+웹 기반 관리자 콘솔을 통해 웹사이트 콘텐츠를 직접 관리할 수 있습니다.
+
+### 10.2 접근 방법
+- 로그인 페이지: `/login`
+- 관리자 대시보드: `/admin`
+- 기본 계정: `admin` / 환경변수로 설정
+
+### 10.3 관리 기능
+
+| 메뉴 | 경로 | 기능 |
+|------|------|------|
+| 대시보드 | `/admin` | 통계 및 최근 활동 확인 |
+| 멤버 관리 | `/admin/members` | 현재 연구실 멤버 CRUD |
+| 졸업생 관리 | `/admin/alumni` | 졸업생 정보 CRUD |
+| 논문 관리 | `/admin/publications` | 논문 등록/수정/삭제 |
+| 뉴스 관리 | `/admin/news` | 뉴스 및 공지사항 관리 |
+| 사이트 설정 | `/admin/settings` | 기본 정보 수정 |
+
+### 10.4 인증 시스템
+- JWT 기반 인증
+- HttpOnly 쿠키 사용
+- 24시간 세션 유지
+- 환경변수로 자격 증명 관리
+
+### 10.5 API 구조
+```
+/api/auth/login     POST   로그인
+/api/auth/logout    POST   로그아웃
+/api/auth/check     GET    인증 확인
+
+/api/members        GET    전체 조회
+/api/members        POST   새 멤버 추가
+/api/members/[id]   GET    개별 조회
+/api/members/[id]   PUT    수정
+/api/members/[id]   DELETE 삭제
+
+(publications, news, alumni 동일 구조)
+```
+
+---
+
+## 11. 확장 가능성
 
 ### 향후 추가 가능 기능
 - 다국어 지원 (i18n)

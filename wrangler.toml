@@ -1,0 +1,11 @@
+# Cloudflare Pages configuration for HAND Lab Website
+name = "hand-lab-website"
+compatibility_date = "2024-01-01"
+
+# The command to run for building the project
+[build]
+command = "npm run build"
+
+# Output directory for the built files
+[site]
+bucket = ".next"
