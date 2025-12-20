@@ -1,0 +1,90 @@
+[
+  {
+    "id": "member-001",
+    "name": "정영훈",
+    "nameEn": "Younghoon Jung",
+    "position": "Ph.D. Student",
+    "year": 2019,
+    "email": "younghoon.jung@kaist.ac.kr",
+    "photo": "/images/members/placeholder.jpg",
+    "research": ["Acoustic Sensors", "Deep Learning", "Self-powered Devices"],
+    "education": "KAIST, B.S. Materials Science & Engineering"
+  },
+  {
+    "id": "member-002",
+    "name": "민세현",
+    "nameEn": "Sehyun Min",
+    "position": "Ph.D. Student",
+    "year": 2019,
+    "email": "sehyun.min@kaist.ac.kr",
+    "photo": "/images/members/placeholder.jpg",
+    "research": ["Wearable Sensors", "Blood Pressure Monitoring", "Healthcare Devices"],
+    "education": "KAIST, B.S. Materials Science & Engineering"
+  },
+  {
+    "id": "member-003",
+    "name": "이정훈",
+    "nameEn": "Junghoon Lee",
+    "position": "Ph.D. Student",
+    "year": 2020,
+    "email": "junghoon.lee@kaist.ac.kr",
+    "photo": "/images/members/placeholder.jpg",
+    "research": ["MicroLED", "Optoelectronics", "Biomedical Devices"],
+    "education": "KAIST, B.S. Materials Science & Engineering"
+  },
+  {
+    "id": "member-004",
+    "name": "안지환",
+    "nameEn": "Jihwan An",
+    "position": "Ph.D. Student",
+    "year": 2020,
+    "email": "jihwan.an@kaist.ac.kr",
+    "photo": "/images/members/placeholder.jpg",
+    "research": ["Wearable Electronics", "Sensor Systems", "Machine Learning"],
+    "education": "KAIST, B.S. Materials Science & Engineering"
+  },
+  {
+    "id": "member-005",
+    "name": "김민재",
+    "nameEn": "Minjae Kim",
+    "position": "Ph.D. Student",
+    "year": 2021,
+    "email": "minjae.kim@kaist.ac.kr",
+    "photo": "/images/members/placeholder.jpg",
+    "research": ["LED Therapy", "Skin Electronics", "Clinical Devices"],
+    "education": "KAIST, B.S. Materials Science & Engineering"
+  },
+  {
+    "id": "member-006",
+    "name": "송민규",
+    "nameEn": "Mingyu Song",
+    "position": "Ph.D. Student",
+    "year": 2021,
+    "email": "mingyu.song@kaist.ac.kr",
+    "photo": "/images/members/placeholder.jpg",
+    "research": ["Transfer Printing", "Flexible Electronics", "MicroLED"],
+    "education": "KAIST, B.S. Materials Science & Engineering"
+  },
+  {
+    "id": "member-007",
+    "name": "현동현",
+    "nameEn": "Donghyeon Hyeon",
+    "position": "Ph.D. Student",
+    "year": 2022,
+    "email": "donghyeon.hyeon@kaist.ac.kr",
+    "photo": "/images/members/placeholder.jpg",
+    "research": ["Acoustic Sensors", "Biomimetic Devices", "Energy Harvesting"],
+    "education": "KAIST, B.S. Materials Science & Engineering"
+  },
+  {
+    "id": "member-008",
+    "name": "조동현",
+    "nameEn": "Donghyun Joe",
+    "position": "Ph.D. Student",
+    "year": 2022,
+    "email": "donghyun.joe@kaist.ac.kr",
+    "photo": "/images/members/placeholder.jpg",
+    "research": ["Energy Harvesting", "Piezoelectric Devices", "Smart Factory"],
+    "education": "KAIST, B.S. Materials Science & Engineering"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "alumni-001",
+    "name": "성승환",
+    "nameEn": "Seunghwan Sung",
+    "position": "Ph.D.",
+    "year": 2018,
+    "graduationYear": 2023,
+    "email": "ssung@example.com",
+    "photo": "/images/alumni/placeholder.jpg",
+    "research": ["Neuromorphic Computing", "Memristive Devices"],
+    "education": "KAIST, B.S. Materials Science & Engineering",
+    "thesis": "Bio-plausible Memristive Neural Components for Neuromorphic Computing",
+    "currentPosition": "Research Scientist",
+    "currentOrganization": "Samsung Electronics"
+  },
+  {
+    "id": "alumni-002",
+    "name": "이승형",
+    "nameEn": "Seunghyung Lee",
+    "position": "Ph.D.",
+    "year": 2017,
+    "graduationYear": 2022,
+    "email": "shlee@example.com",
+    "photo": "/images/alumni/placeholder.jpg",
+    "research": ["MicroLED", "Flexible Electronics"],
+    "education": "KAIST, B.S. Electrical Engineering",
+    "thesis": "Flexible Micro Light-Emitting Diode Systems for Human Applications",
+    "currentPosition": "Senior Researcher",
+    "currentOrganization": "LG Display"
+  },
+  {
+    "id": "alumni-003",
+    "name": "박세훈",
+    "nameEn": "Sehun Park",
+    "position": "Ph.D.",
+    "year": 2018,
+    "graduationYear": 2023,
+    "email": "spark@example.com",
+    "photo": "/images/alumni/placeholder.jpg",
+    "research": ["Transfer Printing", "MicroLED"],
+    "education": "KAIST, B.S. Materials Science & Engineering",
+    "thesis": "Universal Selective Transfer Printing Technologies",
+    "currentPosition": "Research Engineer",
+    "currentOrganization": "Apple"
+  },
+  {
+    "id": "alumni-004",
+    "name": "김동현",
+    "nameEn": "Donghyun Kim",
+    "position": "Ph.D.",
+    "year": 2017,
+    "graduationYear": 2022,
+    "email": "dhkim@example.com",
+    "photo": "/images/alumni/placeholder.jpg",
+    "research": ["Energy Harvesting", "Piezoelectric Devices"],
+    "education": "KAIST, B.S. Mechanical Engineering",
+    "thesis": "Magnetic Energy Harvesting for Smart Factory Applications",
+    "currentPosition": "Assistant Professor",
+    "currentOrganization": "Yonsei University"
+  }
+]

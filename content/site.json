@@ -1,0 +1,34 @@
+{
+  "name": "KAIST HAND Lab",
+  "nameKo": "KAIST HAND 연구실",
+  "fullName": "Human Augmentation Nano Device Laboratory",
+  "description": "Meta sapiens are on the verge of changing our lifestyle. HAND LAB develops Human Augmentation Technologies based on Soft Electronics for the harmonic coexistence of natural human and new humanity.",
+  "url": "https://hand.kaist.ac.kr",
+  "address": "291 Daehak-ro, Yuseong-gu, Daejeon, Korea 34141",
+  "addressKo": "대전광역시 유성구 대학로 291 (E6-6 Building)",
+  "phone": "+82-42-350-3343",
+  "fax": "+82-42-350-3310",
+  "email": "keonlee@kaist.ac.kr",
+  "department": "Department of Materials Science and Engineering",
+  "departmentKo": "신소재공학과",
+  "social": {
+    "googleScholar": "https://scholar.google.com/citations?user=xxxxx",
+    "researchGate": "https://www.researchgate.net/lab/HAND-Lab-Keon-Jae-Lee"
+  },
+  "affiliations": [
+    {
+      "name": "KAIST",
+      "logo": "/images/logos/kaist.png",
+      "url": "https://www.kaist.ac.kr"
+    },
+    {
+      "name": "Global Bio-integrated Materials Center (GBMC)",
+      "logo": "/images/logos/gbmc.png",
+      "url": "http://bmc.kaist.ac.kr"
+    }
+  ],
+  "funding": [
+    "Engineering Research Center (ERC) - $13M over 7 years",
+    "Global Bio-integrated Materials Center"
+  ]
+}

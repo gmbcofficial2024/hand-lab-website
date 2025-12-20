@@ -1,0 +1,77 @@
+[
+  {
+    "id": "human-augmented-sensor",
+    "title": "Human Augmented Sensor",
+    "titleKo": "인간 증강 센서",
+    "description": "We develop advanced sensors that augment human sensory capabilities, including acoustic, tactile, and ultrasonic sensing technologies. Our research focuses on creating self-powered sensors that can seamlessly integrate with the human body for healthcare monitoring and human-machine interfaces.",
+    "image": "/images/research/sensor.jpg",
+    "topics": [
+      {
+        "title": "Auditory Sensors",
+        "description": "Biomimetic piezoelectric acoustic sensors for speech recognition and hearing augmentation"
+      },
+      {
+        "title": "Tactile Sensors",
+        "description": "High-sensitivity pressure sensors for wearable blood pressure monitoring and skin electronics"
+      },
+      {
+        "title": "Ultrasonic Sensors",
+        "description": "Flexible ultrasound devices for medical imaging and therapeutic applications"
+      },
+      {
+        "title": "Self-powered Energy",
+        "description": "Nanogenerators and energy harvesting systems for autonomous sensor operation"
+      }
+    ]
+  },
+  {
+    "id": "neuromorphic-ai",
+    "title": "Neuromorphic AI",
+    "titleKo": "뉴로모픽 AI",
+    "description": "Our neuromorphic research aims to develop brain-inspired computing systems using memristive devices. We focus on creating hardware implementations of artificial synapses and neurons that can process information more efficiently than conventional computing architectures.",
+    "image": "/images/research/neuromorphic.jpg",
+    "topics": [
+      {
+        "title": "Neuromorphic Computing",
+        "description": "Memristive synapse devices for hardware neural networks and in-memory computing"
+      },
+      {
+        "title": "AI-assisted Skin Sensor",
+        "description": "Integration of AI algorithms with wearable sensors for intelligent health monitoring"
+      },
+      {
+        "title": "AI-Brain Interface",
+        "description": "Neural interface devices for brain-machine communication and neurostimulation"
+      },
+      {
+        "title": "3D Monolithic Integration",
+        "description": "Three-dimensional integration of neuromorphic devices for high-density computing"
+      }
+    ]
+  },
+  {
+    "id": "human-electronics",
+    "title": "Human Electronics",
+    "titleKo": "인간 전자공학",
+    "description": "We pioneer the development of soft, flexible electronics that can conform to the human body. Our research encompasses bio-integrated devices, therapeutic light-emitting systems, and laser-processed electronics for next-generation wearable and implantable applications.",
+    "image": "/images/research/electronics.jpg",
+    "topics": [
+      {
+        "title": "Bio-integrated Soft Electronics",
+        "description": "Flexible and stretchable electronic devices for seamless body integration"
+      },
+      {
+        "title": "Augmented Optoelectronics",
+        "description": "MicroLED-based therapeutic devices for photodynamic therapy and skin treatment"
+      },
+      {
+        "title": "Laser-induced Electronics",
+        "description": "Laser processing techniques for fabricating flexible electronic devices"
+      },
+      {
+        "title": "Implantable Devices",
+        "description": "Deep-tissue implantable electronics for cancer therapy and neural stimulation"
+      }
+    ]
+  }
+]
