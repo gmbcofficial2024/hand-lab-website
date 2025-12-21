@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Menu, X, ChevronDown } from 'lucide-react'
+import { usePathname } from 'next/navigation'
+import { Menu, X, ChevronDown, Globe } from 'lucide-react'
 
 const navigation = [
   { name: 'Professor', href: '/professor' },
@@ -40,6 +41,17 @@ const navigation = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const pathname = usePathname()
+  const isEnglish = pathname.startsWith('/en')
+  const currentLang = isEnglish ? 'EN' : 'KR'
+
+  const getLocalizedPath = (targetLang: 'kr' | 'en') => {
+    if (targetLang === 'en') {
+      return isEnglish ? pathname : `/en${pathname}`
+    } else {
+      return isEnglish ? pathname.replace(/^\/en/, '') || '/' : pathname
+    }
+  }
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
@@ -91,6 +103,31 @@ export default function Header() {
                 )}
               </div>
             ))}
+
+            {/* Language Toggle */}
+            <div className="ml-4 pl-4 border-l border-gray-200 flex items-center gap-1">
+              <Globe className="w-4 h-4 text-gray-400" />
+              <Link
+                href={getLocalizedPath('kr')}
+                className={`px-2 py-1 text-sm font-medium rounded transition-colors ${
+                  currentLang === 'KR'
+                    ? 'bg-primary-600 text-white'
+                    : 'text-gray-600 hover:text-primary-600'
+                }`}
+              >
+                KR
+              </Link>
+              <Link
+                href={getLocalizedPath('en')}
+                className={`px-2 py-1 text-sm font-medium rounded transition-colors ${
+                  currentLang === 'EN'
+                    ? 'bg-primary-600 text-white'
+                    : 'text-gray-600 hover:text-primary-600'
+                }`}
+              >
+                EN
+              </Link>
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -136,6 +173,36 @@ export default function Header() {
                   )}
                 </div>
               ))}
+
+              {/* Mobile Language Toggle */}
+              <div className="px-4 py-3 border-t border-gray-100 mt-2 pt-4">
+                <div className="flex items-center gap-2">
+                  <Globe className="w-4 h-4 text-gray-400" />
+                  <span className="text-sm text-gray-500">Language:</span>
+                  <Link
+                    href={getLocalizedPath('kr')}
+                    className={`px-3 py-1.5 text-sm font-medium rounded ${
+                      currentLang === 'KR'
+                        ? 'bg-primary-600 text-white'
+                        : 'bg-gray-100 text-gray-600'
+                    }`}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    한국어
+                  </Link>
+                  <Link
+                    href={getLocalizedPath('en')}
+                    className={`px-3 py-1.5 text-sm font-medium rounded ${
+                      currentLang === 'EN'
+                        ? 'bg-primary-600 text-white'
+                        : 'bg-gray-100 text-gray-600'
+                    }`}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    English
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         )}
