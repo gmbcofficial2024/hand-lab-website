@@ -1,26 +1,35 @@
+'use client'
+
 import Link from 'next/link'
 import { Mail, Phone, MapPin } from 'lucide-react'
-
-const footerLinks = {
-  research: [
-    { name: 'Human Augmented Sensor', href: '/research/human-augmented-sensor' },
-    { name: 'Neuromorphic AI', href: '/research/neuromorphic-ai' },
-    { name: 'Human Electronics', href: '/research/human-electronics' },
-  ],
-  lab: [
-    { name: 'Professor', href: '/professor' },
-    { name: 'Members', href: '/members' },
-    { name: 'Publications', href: '/publications' },
-    { name: 'News', href: '/news' },
-  ],
-  quick: [
-    { name: 'KAIST', href: 'https://www.kaist.ac.kr' },
-    { name: 'MSE Department', href: 'https://mse.kaist.ac.kr' },
-    { name: 'GBMC', href: 'http://bmc.kaist.ac.kr' },
-  ],
-}
+import { useI18n } from '@/lib/i18n'
 
 export default function Footer() {
+  const { t, lang } = useI18n()
+
+  const footerLinks = {
+    research: [
+      { name: 'Human Augmented Sensor', href: '/research/human-augmented-sensor' },
+      { name: 'Neuromorphic AI', href: '/research/neuromorphic-ai' },
+      { name: 'Human Electronics', href: '/research/human-electronics' },
+    ],
+    lab: [
+      { name: t.nav.professor, href: '/professor' },
+      { name: t.nav.members, href: '/members' },
+      { name: t.nav.publications, href: '/publications' },
+      { name: t.nav.news, href: '/news' },
+    ],
+    quick: [
+      { name: 'KAIST', href: 'https://www.kaist.ac.kr' },
+      { name: lang === 'ko' ? '신소재공학과' : 'MSE Department', href: 'https://mse.kaist.ac.kr' },
+      { name: 'GBMC', href: 'http://bmc.kaist.ac.kr' },
+    ],
+  }
+
+  const address = lang === 'ko'
+    ? '대전광역시 유성구 대학로 291 (E6-6)'
+    : '291 Daehak-ro, Yuseong-gu, Daejeon'
+
   return (
     <footer className="bg-gray-900 text-gray-300">
       {/* Main Footer */}
@@ -39,19 +48,19 @@ export default function Footer() {
             </div>
             <p className="text-sm text-gray-400 mb-4 leading-relaxed">
               Human Augmentation Nano Device Laboratory<br />
-              Department of Materials Science and Engineering
+              {lang === 'ko' ? '신소재공학과' : 'Department of Materials Science and Engineering'}
             </p>
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-primary-400" />
-                <span>291 Daehak-ro, Yuseong-gu, Daejeon</span>
+                <MapPin className="w-4 h-4 text-primary-400 flex-shrink-0" />
+                <span>{address}</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-primary-400" />
+                <Phone className="w-4 h-4 text-primary-400 flex-shrink-0" />
                 <span>+82-42-350-3343</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-primary-400" />
+                <Mail className="w-4 h-4 text-primary-400 flex-shrink-0" />
                 <a href="mailto:keonlee@kaist.ac.kr" className="hover:text-white transition-colors">
                   keonlee@kaist.ac.kr
                 </a>
@@ -61,7 +70,7 @@ export default function Footer() {
 
           {/* Research Areas */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Research</h3>
+            <h3 className="text-white font-semibold mb-4">{t.nav.research}</h3>
             <ul className="space-y-2">
               {footerLinks.research.map((link) => (
                 <li key={link.name}>
@@ -95,7 +104,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-white font-semibold mb-4">{t.footer.links}</h3>
             <ul className="space-y-2">
               {footerLinks.quick.map((link) => (
                 <li key={link.name}>
@@ -119,14 +128,10 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-4">
-              <img
-                src="/images/logos/kaist-white.png"
-                alt="KAIST"
-                className="h-8 opacity-60 hover:opacity-100 transition-opacity"
-              />
+              <div className="h-8 text-gray-400 font-semibold text-sm">KAIST</div>
             </div>
             <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} KAIST HAND Lab. All rights reserved.
+              {t.footer.copyright}
             </p>
           </div>
         </div>

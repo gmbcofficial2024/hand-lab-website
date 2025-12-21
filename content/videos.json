@@ -1,0 +1,68 @@
+[
+  {
+    "id": "video-001",
+    "title": "HAND Lab Introduction",
+    "titleKo": "HAND Lab 소개",
+    "description": "Introduction to Human Augmentation Nano Device Laboratory at KAIST",
+    "descriptionKo": "KAIST 인간증강 나노 디바이스 연구실 소개",
+    "youtubeId": "dQw4w9WgXcQ",
+    "category": "lab",
+    "featured": true,
+    "date": "2024-01-15"
+  },
+  {
+    "id": "video-002",
+    "title": "Wearable Blood Pressure Sensor",
+    "titleKo": "웨어러블 혈압 센서",
+    "description": "Clinical validation of wearable piezoelectric blood pressure sensor",
+    "descriptionKo": "웨어러블 압전 혈압 센서의 임상 검증",
+    "youtubeId": "dQw4w9WgXcQ",
+    "category": "research",
+    "featured": true,
+    "date": "2023-06-20"
+  },
+  {
+    "id": "video-003",
+    "title": "MicroLED for Cancer Therapy",
+    "titleKo": "암 치료를 위한 마이크로LED",
+    "description": "Shape-morphing 3D MicroLEDs for pancreatic cancer therapy",
+    "descriptionKo": "췌장암 치료를 위한 형상 변형 3D 마이크로LED",
+    "youtubeId": "dQw4w9WgXcQ",
+    "category": "research",
+    "featured": true,
+    "date": "2025-01-10"
+  },
+  {
+    "id": "video-004",
+    "title": "Lab Vlog #1 - A Day in HAND Lab",
+    "titleKo": "연구실 브이로그 #1 - HAND Lab의 하루",
+    "description": "Follow our researchers through a typical day in the lab",
+    "descriptionKo": "연구원들의 일상을 따라가봅니다",
+    "youtubeId": "dQw4w9WgXcQ",
+    "category": "vlog",
+    "featured": false,
+    "date": "2024-03-10"
+  },
+  {
+    "id": "video-005",
+    "title": "Lab Vlog #2 - Conference Trip",
+    "titleKo": "연구실 브이로그 #2 - 학회 출장",
+    "description": "Our experience at an international conference",
+    "descriptionKo": "국제 학회 참가 경험",
+    "youtubeId": "dQw4w9WgXcQ",
+    "category": "vlog",
+    "featured": false,
+    "date": "2024-05-22"
+  },
+  {
+    "id": "video-006",
+    "title": "Biomimetic Acoustic Sensor",
+    "titleKo": "생체모방 음향 센서",
+    "description": "Self-powered acoustic sensors for customized auditory systems",
+    "descriptionKo": "맞춤형 청각 시스템을 위한 자가발전 음향 센서",
+    "youtubeId": "dQw4w9WgXcQ",
+    "category": "research",
+    "featured": false,
+    "date": "2024-02-15"
+  }
+]

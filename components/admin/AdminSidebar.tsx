@@ -11,7 +11,8 @@ import {
   Settings,
   LogOut,
   ChevronRight,
-  Home
+  Home,
+  Image
 } from 'lucide-react';
 
 const menuItems = [
@@ -20,6 +21,7 @@ const menuItems = [
   { href: '/admin/alumni', icon: GraduationCap, label: '졸업생 관리' },
   { href: '/admin/publications', icon: FileText, label: '논문 관리' },
   { href: '/admin/news', icon: Newspaper, label: '뉴스 관리' },
+  { href: '/admin/media', icon: Image, label: '미디어 관리' },
   { href: '/admin/settings', icon: Settings, label: '사이트 설정' },
 ];
 

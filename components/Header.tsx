@@ -2,56 +2,47 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import { Menu, X, ChevronDown, Globe } from 'lucide-react'
-
-const navigation = [
-  { name: 'Professor', href: '/professor' },
-  {
-    name: 'Research',
-    href: '/research',
-    children: [
-      { name: 'All Research', href: '/research' },
-      { name: 'Human Augmented Sensor', href: '/research/human-augmented-sensor' },
-      { name: 'Neuromorphic AI', href: '/research/neuromorphic-ai' },
-      { name: 'Human Electronics', href: '/research/human-electronics' },
-    ],
-  },
-  {
-    name: 'Publications',
-    href: '/publications',
-    children: [
-      { name: 'Journal Papers', href: '/publications' },
-      { name: 'Data & Resources', href: '/publications/data' },
-    ],
-  },
-  {
-    name: 'Members',
-    href: '/members',
-    children: [
-      { name: 'Current Members', href: '/members' },
-      { name: 'Alumni', href: '/members/alumni' },
-      { name: 'Photos', href: '/members/photos' },
-    ],
-  },
-  { name: 'News', href: '/news' },
-  { name: 'Recruit', href: '/recruit' },
-]
+import { useI18n } from '@/lib/i18n'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
-  const pathname = usePathname()
-  const isEnglish = pathname.startsWith('/en')
-  const currentLang = isEnglish ? 'EN' : 'KR'
+  const { lang, setLang, t } = useI18n()
 
-  const getLocalizedPath = (targetLang: 'kr' | 'en') => {
-    if (targetLang === 'en') {
-      return isEnglish ? pathname : `/en${pathname}`
-    } else {
-      return isEnglish ? pathname.replace(/^\/en/, '') || '/' : pathname
-    }
-  }
+  const navigation = [
+    { name: t.nav.professor, href: '/professor' },
+    {
+      name: t.nav.research,
+      href: '/research',
+      children: [
+        { name: t.nav.allResearch, href: '/research' },
+        { name: 'Human Augmented Sensor', href: '/research/human-augmented-sensor' },
+        { name: 'Neuromorphic AI', href: '/research/neuromorphic-ai' },
+        { name: 'Human Electronics', href: '/research/human-electronics' },
+      ],
+    },
+    {
+      name: t.nav.publications,
+      href: '/publications',
+      children: [
+        { name: t.nav.journalPapers, href: '/publications' },
+        { name: t.nav.dataResources, href: '/publications/data' },
+      ],
+    },
+    {
+      name: t.nav.members,
+      href: '/members',
+      children: [
+        { name: t.nav.currentMembers, href: '/members' },
+        { name: t.nav.alumni, href: '/members/alumni' },
+        { name: t.nav.photos, href: '/members/photos' },
+      ],
+    },
+    { name: t.nav.news, href: '/news' },
+    { name: t.nav.recruit, href: '/recruit' },
+    { name: t.nav.watch, href: '/watch' },
+  ]
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
@@ -107,26 +98,26 @@ export default function Header() {
             {/* Language Toggle */}
             <div className="ml-4 pl-4 border-l border-gray-200 flex items-center gap-1">
               <Globe className="w-4 h-4 text-gray-400" />
-              <Link
-                href={getLocalizedPath('kr')}
+              <button
+                onClick={() => setLang('ko')}
                 className={`px-2 py-1 text-sm font-medium rounded transition-colors ${
-                  currentLang === 'KR'
+                  lang === 'ko'
                     ? 'bg-primary-600 text-white'
                     : 'text-gray-600 hover:text-primary-600'
                 }`}
               >
                 KR
-              </Link>
-              <Link
-                href={getLocalizedPath('en')}
+              </button>
+              <button
+                onClick={() => setLang('en')}
                 className={`px-2 py-1 text-sm font-medium rounded transition-colors ${
-                  currentLang === 'EN'
+                  lang === 'en'
                     ? 'bg-primary-600 text-white'
                     : 'text-gray-600 hover:text-primary-600'
                 }`}
               >
                 EN
-              </Link>
+              </button>
             </div>
           </div>
 
@@ -179,28 +170,26 @@ export default function Header() {
                 <div className="flex items-center gap-2">
                   <Globe className="w-4 h-4 text-gray-400" />
                   <span className="text-sm text-gray-500">Language:</span>
-                  <Link
-                    href={getLocalizedPath('kr')}
+                  <button
+                    onClick={() => { setLang('ko'); setMobileMenuOpen(false); }}
                     className={`px-3 py-1.5 text-sm font-medium rounded ${
-                      currentLang === 'KR'
+                      lang === 'ko'
                         ? 'bg-primary-600 text-white'
                         : 'bg-gray-100 text-gray-600'
                     }`}
-                    onClick={() => setMobileMenuOpen(false)}
                   >
                     한국어
-                  </Link>
-                  <Link
-                    href={getLocalizedPath('en')}
+                  </button>
+                  <button
+                    onClick={() => { setLang('en'); setMobileMenuOpen(false); }}
                     className={`px-3 py-1.5 text-sm font-medium rounded ${
-                      currentLang === 'EN'
+                      lang === 'en'
                         ? 'bg-primary-600 text-white'
                         : 'bg-gray-100 text-gray-600'
                     }`}
-                    onClick={() => setMobileMenuOpen(false)}
                   >
                     English
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>
