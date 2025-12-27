@@ -1,26 +1,112 @@
 [
   {
-    "id": "news-2025-001",
+    "id": "news-2025-12-03",
+    "title": "이건재 교수, 한국공학한림원 일반회원 임명",
+    "titleEn": "Professor Keon Jae Lee appointed as a member of the National Academy of Engineering of Korea",
+    "date": "2025-12-20",
+    "category": "award",
+    "content": "이건재 교수가 한국공학한림원 일반회원으로 임명되었습니다.",
+    "contentEn": "Professor Keon Jae Lee has been appointed as a member of the National Academy of Engineering of Korea.",
+    "thumbnail": "/images/news/placeholder.jpg"
+  },
+  {
+    "id": "news-2025-12-02",
     "title": "KAIST, 문어다리처럼 감싸 췌장암 치료하는 LED 장치 개발",
+    "titleEn": "KAIST develops octopus-like LED device for pancreatic cancer treatment",
     "date": "2025-12-15",
     "category": "research",
     "content": "KAIST 신소재공학과 이건재 교수 연구팀이 췌장암 치료를 위한 3D 마이크로 LED 장치를 개발했습니다. 이 장치는 문어다리처럼 유연하게 종양을 감싸 효과적인 광역학 치료를 가능하게 합니다.",
+    "contentEn": "Professor Keon Jae Lee's team at KAIST has developed a 3D microLED device for pancreatic cancer treatment. This device flexibly wraps around tumors like octopus tentacles, enabling effective photodynamic therapy.",
     "thumbnail": "/images/news/placeholder.jpg"
   },
   {
-    "id": "news-2025-002",
+    "id": "news-2025-12-01",
+    "title": "이건재 교수, Extreme Mechanics Letters 저널 Editor 임명",
+    "titleEn": "Professor Keon Jae Lee appointed as Editor of Extreme Mechanics Letters",
+    "date": "2025-12-01",
+    "category": "award",
+    "content": "이건재 교수가 Extreme Mechanics Letters 저널의 Editor로 임명되었습니다.",
+    "contentEn": "Professor Keon Jae Lee has been appointed as Editor for Extreme Mechanics Letters journal.",
+    "thumbnail": "/images/news/placeholder.jpg"
+  },
+  {
+    "id": "news-2025-11-01",
+    "title": "이건재 교수, 한국재료학회 부회장 임명",
+    "titleEn": "Professor Keon Jae Lee appointed as Vice President of Korean Institute of Materials",
+    "date": "2025-11-15",
+    "category": "award",
+    "content": "이건재 교수가 한국재료학회 부회장으로 임명되었습니다.",
+    "contentEn": "Professor Keon Jae Lee has been appointed as Vice President of the Korean Institute of Materials.",
+    "thumbnail": "/images/news/placeholder.jpg"
+  },
+  {
+    "id": "news-2025-09-01",
     "title": "이건재 교수, Nature Reviews Cardiology 리뷰 논문 게재",
+    "titleEn": "Review paper published in Nature Reviews Cardiology",
     "date": "2025-09-01",
-    "category": "publication",
+    "category": "research",
     "content": "HAND Lab의 웨어러블 혈압 센서 연구가 Impact Factor 41.7의 Nature Reviews Cardiology에 리뷰 논문으로 게재되었습니다.",
+    "contentEn": "HAND Lab's research on wearable blood pressure sensors has been published as a review paper in Nature Reviews Cardiology (IF: 41.7).",
     "thumbnail": "/images/news/placeholder.jpg"
   },
   {
-    "id": "news-2024-001",
+    "id": "news-2025-06-01",
+    "title": "KAIST, 전자소자 분야 권위자 존 로저스 등 3명 초빙교수 임용",
+    "titleEn": "KAIST appoints three distinguished visiting professors including John Rogers",
+    "date": "2025-06-01",
+    "category": "event",
+    "content": "KAIST가 전자소자 분야의 권위자인 존 로저스 교수를 포함한 3명의 저명한 학자를 초빙교수로 임용했습니다.",
+    "contentEn": "KAIST appoints three distinguished visiting professors including John Rogers, a leading authority in electronic devices.",
+    "thumbnail": "/images/news/placeholder.jpg"
+  },
+  {
+    "id": "news-2025-04-01",
+    "title": "Advanced Materials 논문, Top viewed article 선정",
+    "titleEn": "Top viewed article in Advanced Materials",
+    "date": "2025-04-15",
+    "category": "research",
+    "content": "최근 발표한 논문이 Advanced Materials의 Top viewed article로 선정되었습니다.",
+    "contentEn": "Our recent publication becomes one of the top viewed articles in Advanced Materials.",
+    "thumbnail": "/images/news/placeholder.jpg"
+  },
+  {
+    "id": "news-2025-03-01",
+    "title": "AI 기반 웨어러블 혈압 센서 프레임워크 개발",
+    "titleEn": "KAIST team develops framework for AI-based wearable blood pressure sensors",
+    "date": "2025-03-20",
+    "category": "research",
+    "content": "AI 기반 웨어러블 혈압 센서를 위한 종합 프레임워크를 개발했습니다.",
+    "contentEn": "A comprehensive framework for developing AI-powered wearable blood pressure sensors for continuous health monitoring.",
+    "thumbnail": "/images/news/placeholder.jpg"
+  },
+  {
+    "id": "news-2025-02-01",
+    "title": "2월 과기인상에 이건재 교수…피부밀착 마이크로LED 마스크 개발",
+    "titleEn": "Professor Keon Jae Lee receives February Science and Technology Award",
+    "date": "2025-02-15",
+    "category": "award",
+    "content": "이건재 교수가 피부밀착 마이크로LED 마스크 개발로 2월 과기인상을 수상했습니다.",
+    "contentEn": "Professor Keon Jae Lee receives the February Science and Technology Award for developing skin-conformable microLED masks.",
+    "thumbnail": "/images/news/placeholder.jpg"
+  },
+  {
+    "id": "news-2024-12-01",
+    "title": "이건재 교수, KAIST Impact Research 상 수상",
+    "titleEn": "Professor Keon Jae Lee receives KAIST Impact Research Award",
+    "date": "2024-12-01",
+    "category": "award",
+    "content": "이건재 교수가 KAIST Impact Research 상을 수상했습니다.",
+    "contentEn": "Professor Keon Jae Lee receives KAIST Impact Research Award for outstanding research contributions.",
+    "thumbnail": "/images/news/placeholder.jpg"
+  },
+  {
+    "id": "news-2024-11-01",
     "title": "피부 노화 방지 LED 마스크 임상 검증 성공",
+    "titleEn": "Clinical validation success for anti-aging LED mask",
     "date": "2024-11-20",
     "category": "research",
     "content": "HAND Lab에서 개발한 Face-fit Surface-lighting micro LED Mask의 피부 안티에이징 효과가 임상시험을 통해 검증되었습니다. 관련 연구가 Advanced Materials에 게재되었습니다.",
+    "contentEn": "The skin anti-aging effects of the Face-fit Surface-lighting micro LED Mask developed by HAND Lab have been validated through clinical trials. The research has been published in Advanced Materials.",
     "thumbnail": "/images/news/placeholder.jpg"
   }
 ]

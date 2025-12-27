@@ -1,9 +1,10 @@
 import Link from 'next/link'
-import { ArrowRight, BookOpen, Users, Beaker, Award, ExternalLink, Calendar, Newspaper, Play, Youtube } from 'lucide-react'
+import { ArrowRight, BookOpen, Users, Beaker, Award, ExternalLink, Play, Youtube } from 'lucide-react'
 import publications from '@/content/publications.json'
 import research from '@/content/research.json'
 import news from '@/content/news.json'
 import videos from '@/content/videos.json'
+import { getLocalizedField } from '@/lib/i18n'
 
 const categoryColors: Record<string, string> = {
   research: 'bg-blue-100 text-blue-700',
@@ -14,7 +15,7 @@ const categoryColors: Record<string, string> = {
   publication: 'bg-green-100 text-green-700',
 }
 
-export default function HomePage() {
+export default function HomePageEn() {
   const featuredPublications = publications.filter(p => p.featured).slice(0, 4)
   const latestNews = news.slice(0, 4)
 
@@ -25,7 +26,7 @@ export default function HomePage() {
         {/* Background */}
         <div className="absolute inset-0 gradient-bg" />
         <div className="absolute inset-0 bg-[url('/images/pattern.svg')] opacity-10" />
-        
+
         {/* Floating shapes */}
         <div className="absolute top-20 right-20 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
@@ -37,24 +38,24 @@ export default function HomePage() {
                 <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
                 KAIST Department of Materials Science & Engineering
               </div>
-              
+
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-display leading-tight">
                 Human<br />
                 Augmentation<br />
                 <span className="text-blue-300">Nano Device</span>
               </h1>
-              
+
               <p className="text-xl text-blue-100 max-w-xl leading-relaxed">
-                Developing Human Augmentation Technologies based on Soft Electronics 
+                Developing Human Augmentation Technologies based on Soft Electronics
                 for the harmonic coexistence of natural human and new humanity.
               </p>
-              
+
               <div className="flex flex-wrap gap-4">
-                <Link href="/research" className="btn-primary bg-white text-primary-600 hover:bg-gray-100">
+                <Link href="/en/research" className="btn-primary bg-white text-primary-600 hover:bg-gray-100">
                   Explore Research
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
-                <Link href="/recruit" className="btn-secondary border-white text-white hover:bg-white hover:text-primary-600">
+                <Link href="/en/recruit" className="btn-secondary border-white text-white hover:bg-white hover:text-primary-600">
                   Join Our Lab
                 </Link>
               </div>
@@ -113,7 +114,7 @@ export default function HomePage() {
             {research.map((area, index) => (
               <Link
                 key={area.id}
-                href={`/research/${area.id}`}
+                href={`/en/research/${area.id}`}
                 className="group card card-hover p-8"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
@@ -153,7 +154,7 @@ export default function HomePage() {
               </p>
             </div>
             <Link
-              href="/news"
+              href="/en/news"
               className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium mt-4 md:mt-0"
             >
               See all News
@@ -183,10 +184,10 @@ export default function HomePage() {
                       </span>
                     </div>
                     <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-primary-600 transition-colors">
-                      {item.title}
+                      {getLocalizedField(item, 'title', 'en')}
                     </h3>
                     <p className="text-sm text-gray-600 line-clamp-2">
-                      {item.content}
+                      {getLocalizedField(item, 'content', 'en')}
                     </p>
                   </div>
                 </div>
@@ -207,7 +208,7 @@ export default function HomePage() {
               </p>
             </div>
             <Link
-              href="/publications"
+              href="/en/publications"
               className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium mt-4 md:mt-0"
             >
               View all publications
@@ -260,7 +261,7 @@ export default function HomePage() {
               </p>
             </div>
             <Link
-              href="/watch"
+              href="/en/watch"
               className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium mt-4 md:mt-0"
             >
               See all Videos
@@ -280,7 +281,7 @@ export default function HomePage() {
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold text-gray-900 line-clamp-2 group-hover:text-primary-600 transition-colors">
-                    {video.title}
+                    {getLocalizedField(video, 'title', 'en')}
                   </h3>
                   <p className="text-sm text-gray-500 mt-1">{video.date}</p>
                 </div>
@@ -312,7 +313,7 @@ export default function HomePage() {
                 </div>
                 <div className="p-4">
                   <h3 className="font-medium text-gray-900 text-sm line-clamp-2 group-hover:text-primary-600 transition-colors">
-                    {video.title}
+                    {getLocalizedField(video, 'title', 'en')}
                   </h3>
                 </div>
               </div>
@@ -328,8 +329,8 @@ export default function HomePage() {
             <div>
               <h2 className="section-title">Global Bio-integrated Materials Center</h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                HAND Lab is selected as an Engineering Research Center (ERC) with $13 million funding over 7 years. 
-                Our center, Global Bio-integrated Materials Center (GBMC), focuses on developing next-generation 
+                HAND Lab is selected as an Engineering Research Center (ERC) with $13 million funding over 7 years.
+                Our center, Global Bio-integrated Materials Center (GBMC), focuses on developing next-generation
                 bio-integrated materials and devices for human augmentation.
               </p>
               <div className="space-y-4 mb-8">
@@ -382,14 +383,14 @@ export default function HomePage() {
             Join Our Research Team
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            We are always looking for passionate researchers to join our lab. 
+            We are always looking for passionate researchers to join our lab.
             Explore opportunities to work on cutting-edge human augmentation technologies.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/recruit" className="btn-primary bg-white text-primary-600 hover:bg-gray-100">
+            <Link href="/en/recruit" className="btn-primary bg-white text-primary-600 hover:bg-gray-100">
               View Open Positions
             </Link>
-            <Link href="/members" className="btn-secondary border-white text-white hover:bg-white hover:text-primary-600">
+            <Link href="/en/members" className="btn-secondary border-white text-white hover:bg-white hover:text-primary-600">
               Meet Our Team
             </Link>
           </div>

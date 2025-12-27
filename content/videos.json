@@ -1,0 +1,58 @@
+{
+  "watch": [
+    {
+      "id": "watch-2025-01",
+      "title": "이건재 교수팀, 문어 다리처럼 감싸는 췌장암 정밀 제거 3D 마이크로 LED",
+      "titleEn": "3D MicroLED for Pancreatic Cancer Treatment",
+      "date": "2025-12",
+      "youtubeId": "",
+      "thumbnail": "/images/videos/placeholder.jpg"
+    },
+    {
+      "id": "watch-2024-02",
+      "title": "피부가 3배 더 탱탱 ⋯다음 달 상용화",
+      "titleEn": "Skin becomes 3x firmer - Commercialization next month",
+      "date": "2024-10",
+      "youtubeId": "",
+      "thumbnail": "/images/videos/placeholder.jpg"
+    },
+    {
+      "id": "watch-2024-01",
+      "title": "[SMEs on the rise 2024] Developing micro-LED face masks, \"Fronics(프로닉스)\"",
+      "titleEn": "[SMEs on the rise 2024] Developing micro-LED face masks, \"Fronics\"",
+      "date": "2024-06",
+      "youtubeId": "",
+      "thumbnail": "/images/videos/placeholder.jpg"
+    }
+  ],
+  "vlog": [
+    {
+      "id": "vlog-01",
+      "title": "ILP 소재 분야 이건재 교수 강연",
+      "titleEn": "Professor Keon Jae Lee's ILP Lecture on Materials",
+      "youtubeId": "",
+      "thumbnail": "/images/videos/placeholder.jpg"
+    },
+    {
+      "id": "vlog-02",
+      "title": "Welcome to HAND",
+      "titleEn": "Welcome to HAND",
+      "youtubeId": "",
+      "thumbnail": "/images/videos/placeholder.jpg"
+    },
+    {
+      "id": "vlog-03",
+      "title": "Professor Interview",
+      "titleEn": "Professor Interview",
+      "youtubeId": "",
+      "thumbnail": "/images/videos/placeholder.jpg"
+    },
+    {
+      "id": "vlog-04",
+      "title": "Student Vlog",
+      "titleEn": "Student Vlog",
+      "youtubeId": "",
+      "thumbnail": "/images/videos/placeholder.jpg"
+    }
+  ]
+}
